@@ -1,0 +1,377 @@
+body {
+  margin: 0;
+  overflow: auto;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.nav-item a{
+  text-decoration: none !important;
+}
+
+
+
+#imageCarousel .carousel-item {
+  position: relative;
+  height: 100vh; 
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+#imageCarousel .carousel-indicators{
+margin: 0;
+top: 82%;
+
+}
+
+
+.carousel-item img {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  padding-top: 3%;
+  transform: translateY(-50%);
+  height: 94%;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  padding-bottom:5%;
+}
+
+
+.carousel-caption{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+  color: #000;
+ 
+}
+
+
+
+
+#imageCarousel .carousel-item.active {
+  opacity: 1;
+}
+
+
+#progressBar {
+  margin-top: 2%;
+  height: px;
+  background-color: #000;
+}
+
+#progressBar .progress-bar {
+  background-color: #000;
+  transition: width 0.5s ease-in-out, opacity 0.5s ease-in-out;
+}
+
+
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.9em;
+  background-color: #ffffff;
+  padding: 0.7em;
+}
+
+
+#works{
+  overflow: scroll;
+  overflow-x: hidden;
+  margin-top:5%;
+  line-height:100%;
+}
+
+#works .project{
+  padding: 4% 14%;
+}
+
+#works .project-item {
+  padding: 0 0%;
+  margin:6% 12%;
+  
+  
+
+}
+
+
+#works .square-container {
+  width: 100%;
+  padding-top: 100%; 
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 0%; 
+}
+
+#works .square-img {
+  
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+}
+
+#works .project-item a{
+  text-decoration: none !important;
+  color: #000;
+}
+
+#works .project-item a:hover{
+  color: #454545;
+}
+
+
+#works .project-tittle{
+  padding: 0;
+  padding: -3;
+  
+  
+  
+}
+
+#works .project-pro{
+  padding: 0;
+}
+
+
+
+
+#reflection{
+  padding: 4% 10%;
+  overflow: scroll;
+  overflow-x: hidden;
+
+  
+}
+
+#reflection h2{
+  font-size: 2em;
+  font-weight: 800;
+  font-style: italic;
+  padding: 16% 30% 8% 0;/*top,right,bottom,left */
+  
+}
+
+#reflection li{
+  font-size: 1.2em;
+  font-weight: 200;
+  padding: 3% 0;
+  padding-right: 35%;
+  
+}
+
+.fade-text {
+  transition: color 1.1s ease;
+}
+
+
+
+li {
+  list-style-type: none;
+}
+
+
+
+#refbody{
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+#reference{
+  word-wrap: break-word;
+  padding: 4% 6.3%;
+  vertical-align: baseline; 
+}
+
+#reference .text{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #454545;
+}
+
+#reference .text2{
+  font-weight: 100;
+  font-size: 1.2em;
+  color: #454545;
+}
+
+
+#reference li{
+  padding: 1em 2em;
+}
+
+
+#contact{
+  overflow: hidden;
+}
+
+
+#contact .text h1{
+  padding: 0 18%;
+  font-size: 2em;
+  font-weight: 500;
+  opacity: 50%;
+  line-height:120%
+  
+}
+
+#contact .text h2{
+  padding: 5% 0;
+  font-weight: 100;
+  font-size: 1.5em;
+}
+
+#contact .text a{
+  color: #474747;
+  padding: 0 1%;
+  text-decoration: none !important;
+}
+
+#contact .text a:hover{
+  color: #000000;
+  padding: 0 1%;
+  text-decoration: none !important;
+}
+
+
+
+/*Project-Micro */
+
+#micro-container img{
+  width: 80%;
+}
+
+#micro-container .text{
+  max-width: 80%;
+}
+
+.tittle-line{
+  margin: 1% auto;
+  width: 10em;
+}
+
+/*Project-BWS */
+
+#BWS-container img{
+  width: 80%;
+}
+
+#BWS-container .text{
+  max-width: 80%;
+}
+
+.tittle-line{
+  margin: 1% auto;
+  width: 10em;
+}
+
+
+.text-decoration-none {
+  text-decoration: none;
+}
+
+.link-hover-effect:hover {
+  color: rgb(157, 157, 157);
+}
+
+
+
+
+
+@media (max-width: 992px) {
+  .navbar-brand {
+    display: none;
+  }
+  
+  .navbar-toggler {
+    order: -1;
+  }
+
+  .navbar-brand-centered {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar-brand.d-lg-none {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+
+  #reference{
+    padding: 15% 0;
+    width: 100%;
+  }
+
+  #reference li{
+    padding: 5% 4%;
+  }
+  
+
+
+  #reflection{
+    padding:30% 10%;
+
+  }
+
+  #reflection h2{
+    font-size: 1.9em;
+    padding: 16% 0% 15% 0;/*top,right,bottom,left */
+    
+  }
+
+  #reflection li{
+    padding: 3% 0;
+    padding-right: 0%;
+    
+  }
+
+  footer {
+    font-weight: 300;
+    font-size: 0.5em;
+  }
+
+
+}
